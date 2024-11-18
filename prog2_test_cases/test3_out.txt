@@ -1,0 +1,6 @@
+Col 1 : 6
+Col 2 : 6
+Col 3 : 6
+Col 4 : 6
+Col 5 : 6
+Col 6 : 6
