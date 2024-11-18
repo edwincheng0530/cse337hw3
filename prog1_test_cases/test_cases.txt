@@ -2,4 +2,6 @@ TEST CASES
 (1) bash prog1.sh prog1_test_cases/not_found
 (2) bash prog1.sh prog1_test_cases/not_found2 prog1_test_cases/prog1_test_case_2
 (3) bash prog1.sh prog1_test_cases/test3 prog1_test_cases/test3_out
+    # Y
 (4) bash prog1.sh prog1_test_cases/test4 prog1_test_cases/test4_out
+    # N
