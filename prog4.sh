@@ -46,6 +46,7 @@ for file in "$SRC_DIR"/*; do
         student_grade[student_count] = grade
     }
     END {
+        # Print out each student_id along with the letter grade
         for(i = 1; i <= student_count; i++) {
             print student_id[i] ":" student_grade[i]
         }
