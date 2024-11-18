@@ -27,3 +27,7 @@ grep -o '\b[a-zA-Z]\{4\}\b' "$SRC_FILE" | while read word; do
         echo "Misspelled word: $word"
     fi
 done
+
+
+# TEST CASES
+# Test cases can be found in prog5_test_cases/test_cases.txt

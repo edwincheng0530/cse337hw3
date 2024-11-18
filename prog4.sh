@@ -46,3 +46,8 @@ for file in "$SRC_DIR"/*; do
     }
     ' "$file"
 done
+
+
+
+# TEST CASES
+# Test cases can be found in prog4_test_cases/test_cases.txt

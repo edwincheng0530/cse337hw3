@@ -65,3 +65,7 @@ END {
     weighted_class_average = total_average / student_count
     print weighted_class_average
 }' "$data_file" "$@"
+
+
+# TEST CASES
+# Test cases can be found in prog3_test_cases/test_cases.txt

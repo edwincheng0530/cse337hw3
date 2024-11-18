@@ -15,7 +15,7 @@ if [ ! -d "$SRC_DIR" ]; then
     exit 1
 fi
 
-# If given DST_DIR isn't a directory, error
+# If given DST_DIR isn't a directory, make the directory
 if [ ! -d "$DST_DIR" ]; then
     mkdir -p "$DST_DIR"
 fi
@@ -60,7 +60,7 @@ num_c_files=$(find "$SRC_DIR" -maxdepth 1 -name "*.c" -type f | wc -l)
 bool_three_files=false
 # If number of .c files > 3, prompt user to move files
 if [ "$num_c_files" -gt 3 ]; then
-    ls "$file"/*.c
+    ls "$SRC_DIR"/*.c
     read -p "Do you want to move all these .c files?" input
     if [[ "$input" == "Y" ]] || [[ "$input" == "y" ]]; then
         bool_three_files=true
@@ -80,3 +80,7 @@ for file in "$SRC_DIR"/*; do
         fi
     fi
 done
+
+
+# TEST CASES
+# Test cases can be found in prog1_test_cases/test_cases.txt
