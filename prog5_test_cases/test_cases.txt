@@ -1,0 +1,5 @@
+TEST CASES
+(1) bash prog5.sh prog5_test_cases/not_found.txt
+(2) bash prog5.sh prog5_test_cases/test2.txt prog5_test_cases/not_found.txt
+(3) bash prog5.sh prog5_test_cases/test3.txt prog5_test_cases/dictionary.txt
+(4) bash prog5.sh prog5_test_cases/test4.txt prog5_test_cases/dictionary.txt
