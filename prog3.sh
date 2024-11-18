@@ -1,5 +1,6 @@
 #!/bin/bash
-# Check if data file is provided
+
+# Check if data file is provided - if not, error
 if [ "$#" -lt 1 ]; then
     echo "missing data file"
     exit 1
@@ -9,7 +10,7 @@ fi
 data_file="$1"
 shift  # Remove first argument, leaving only weights
 
-# Check if file exists
+# Check if file exists, if not error
 if [ ! -f "$data_file" ]; then
     echo "$data_file not found"
     exit 1
@@ -63,7 +64,7 @@ END {
         total_average += average
     }
     weighted_class_average = total_average / student_count
-    print weighted_class_average
+    print int(weighted_class_average)
 }' "$data_file" "$@"
 
 
